@@ -1,0 +1,22 @@
+<%- include('partials/header.ejs') %>
+        <hr />
+        
+        <div id="ltm_content">
+            <h2><span class="ltm_color">Global Traffic Manager</span></h2>
+        </div>
+
+        <br /><br />
+        <main>
+            
+            <iframe style="border:0;" width="560" height="315" src="https://www.youtube.com/embed/9fooqDbwJIk" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br />
+            
+            <div id="content">
+                <p> With a <abbr title="Global Traffic Manager">GTM</abbr> you have the ability to have incoming traffic be sent to a datacenter closest to the client along with many more features. You can think of a GTM as a DNS with superpowers. 
+                With a GTM, you can have multiple virtual servers behind a wideip which allows for it to return DNS to multiple virtual servers. For example, if you have a wideip with multiple virtual servers, you can add them to a pool
+                and have the wideip redirect your primary traffic to a set of virtual servers and have a failover pool in case the primary pool is down. In this case, you would not have any down time for your service. To have a more in depth 
+                introduction, <b>click on the youtube video </b>on the left.</p>
+            </div>
+            
+        </main>
+<%- include('partials/footer.ejs') %>

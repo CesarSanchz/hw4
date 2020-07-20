@@ -1,0 +1,153 @@
+body {
+    background-color:gray;
+    color:white;
+    margin: 0;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 5em;
+    margin-bottom: 0px;
+}
+
+h2 {
+    margin-top: 5px;
+    margin-bottom: 0px;
+    font-size: 1.7em;
+}
+
+header {
+    background-image: url("../img/banner.jpg");
+    color: white;
+    background-size: cover;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+nav, footer {
+    text-align: center;
+}
+
+footer {
+    color: white;
+    font-size: small;
+}
+
+
+nav a { /* links within "nav" container */
+    padding:15px;
+    padding-bottom:4px;
+    font-size: 1.8em;
+    text-decoration: none; /* removes underline */
+    color: white; /* by default, links are blue*/
+}
+
+nav a:hover { /* pseudo class */
+    border-bottom:2px orange solid;
+    background-color: #66399D;
+    font-size: 2em;
+    border-radius: 10px;
+    padding-top: 5px;
+    transition: .9s; /* transition effect*/
+}
+
+.active { /* Creating a border around the current page*/
+  background-color:#4CAF50;
+  border-radius: 10px;
+  padding-top: 5px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+    text-align: left;
+}
+
+table {
+    margin: 0px auto;
+    border-collapse:collapse;
+}
+
+td {
+    padding-right: 10px;
+    font-size: 1.3em;
+}
+
+td strong {
+    color: white;
+}
+
+#content {
+    text-align:left;
+    width: 800px;
+}
+
+#ltm_content {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.sources {
+    text-align: center;
+    justify-content: center;
+}
+
+
+/* unvisited link */
+.sources:link {
+    color:white;
+    text-decoration: none;
+}
+
+/* visited link */
+.sources:visited {
+    color: blue;
+}
+
+/* hover link*/
+.sources:hover {
+    color: red;
+}
+
+.sources:active {
+    color:hotpink;
+}
+
+#table-header {
+    background-color: #000623;
+}
+
+.table-row {
+    background-color: #213ABA;
+}
+.table-row:nth-child(even) {
+  background-color: #BAA121;
+}
+
+ul {
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* color and font for LTM header*/
+.ltm_color {
+    color: blue;
+    font-size: 1.3em;
+}
+
+/* color for terms */
+.terms {
+    color: #AD3838;
+}
+
+/* add padding for youtube frame*/
+
+iframe {
+    padding:15px;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang=en>
+<!--
+
+First Website
+and comment
+in html
+(comments can span multiple lines)
+
+-->
+
+<!-- This is the head -->
+<!-- All styles and javascript go inside the head -->
+
+    <head>
+        <title>Cesar Sanchez: Personal Site</title>
+        <meta charset="utf-8" />
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/css/styles.css" />
+        
+    </head>
+<!-- closing head -->
+    <!-- This is the body -->
+    <!-- This is where we place the content of our website -->
+    <body>
+        
+        <!-- Semantic Tags-->
+        <header>
+            <h1> Load Balancers </h1>
+            <h2> <%= phrase %> </h2>
+            <br /><br />
+            <nav>
+            <a <% if (page === 'index') { %>class="active" <% } %> href="/">Home</a>
+            <a <% if (page === 'ltm') { %>class="active" <% } %> href="/ltm">LTM Terms To Know</a>
+            <a <% if (page === 'gtm') { %>class="active" <% } %> href="/gtm">GTM</a>
+            <a <% if (page === 'sources') { %>class="active" <% } %> href="/sources">Sources</a>
+            </nav>
+            
+        </header>

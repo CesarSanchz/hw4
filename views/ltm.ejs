@@ -1,0 +1,56 @@
+<%- include('partials/header.ejs') %>
+        <hr />
+        
+        <div id="ltm_content">
+            <h2><span class="ltm_color">Local Traffic Manager</span></h2>
+        </div>
+        <br />
+        <main>
+            <figure>
+
+                 <img src="img/redirect.jpg" alt="Picture of Redirect">
+                
+            </figure>
+            <div id="content">
+                <!-- Create the table to hold the exoerience data -->
+                <br /><br /><br />
+                <ul>
+                    <li><span class="terms">Node:</span> A node is a physical server which contains an IP address. </li>
+                    <li><span class="terms">Pool:</span> A pool is a cluster of servers that will be associated with a virtual server. </li>
+                    <li><span class="terms">Pool Member:</span> A pool member is pretty much a node except you are able to have it listening on a port number. </li>
+                    <li><span class="terms">Virtual Server:</span> A virtual server is a traffic management object which redirects the traffic to the servers that are in your pool. </li>
+                </ul>
+                
+            </div>
+        </main>
+            <div>
+                <table>
+                    <tr id="table-header">
+                        <td></td>
+                        <td><strong>Commands</strong></td>
+                        <td><strong>Details</strong></td>
+                    </tr>
+                    <tr class="table-row">
+                        <td> node</td>
+                        <td>list ltm node (Insert name of node) </td>
+                        <td>Displays full details of the node </td>
+                    </tr>
+                    <tr class="table-row">
+                        <td> pool</td>
+                        <td>list ltm pool (Insert pool name)</td>
+                        <td>Displays full details of the pool </td>
+                    </tr>
+                    <tr class="table-row">
+                        <td> virtual server</td>
+                        <td>list ltm virtual (Insert name of virtual server) </td>
+                        <td>Displays full details of the virtual server </td>
+                    </tr>
+                </table>
+            </div>
+            
+        <br />
+       
+
+        <!-- This is the footer -->
+        <!-- The footer goes inside the body but not always -->
+<%- include('partials/footer.ejs') %>
